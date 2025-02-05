@@ -1,0 +1,220 @@
+/* Custom Styles */
+
+/* Define CSS Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a202c;
+  --bg-secondary: #f7fafc;
+  --nav-bg: #ffffff;
+  --nav-text: #4a5568;
+  --accent-color: #4299e1;
+}
+
+.dark-theme {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --bg-secondary: #2d3748;
+  --nav-bg: #2d3748;
+  --nav-text: #cbd5e0;
+  --accent-color: #63b3ed;
+}
+
+/* Apply Variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--nav-text);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--nav-bg);
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--nav-text);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu-button {
+  font-size: 1.5rem;
+}
+
+/* Mobile Menu Links */
+.nav-link-mobile {
+  color: var(--text-color);
+  background-color: var(--bg-secondary);
+}
+
+.nav-link-mobile:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Sections */
+section {
+  background-color: var(--bg-color);
+}
+
+/* Hero Section */
+#home {
+  background: url('../assets/svg/hero-pattern.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.dark-theme #home {
+  background: url('../assets/svg/hero-pattern-dark.svg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Skill Cards */
+.skill-card {
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+}
+
+/* Certification Cards */
+.certification-card {
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+}
+
+/* Projects Section */
+#projects {
+  background-color: var(--bg-secondary);
+}
+
+.project-card img {
+  border-radius: 0.375rem;
+}
+
+/* Contact Form */
+form {
+  background-color: var(--bg-secondary);
+}
+
+/* Transition for theme change */
+.transition-all {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  .md\:hidden {
+    display: block;
+  }
+
+  .md\:flex {
+    display: none;
+  }
+
+  /* Center mobile menu items */
+  #mobile-menu a {
+    text-align: center;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+}
+
+/* Additional Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.transform {
+  transform: translateY(0);
+}
+
+.hover\:-translate-y-2:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Custom Colors for Progress Bars */
+.skill-card:nth-child(1) .bg-yellow-300 {
+  background-color: #fcd34d;
+}
+
+.skill-card:nth-child(1) .bg-yellow-600 {
+  background-color: #d97706;
+}
+
+.skill-card:nth-child(2) .bg-blue-300 {
+  background-color: #93c5fd;
+}
+
+.skill-card:nth-child(2) .bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.skill-card:nth-child(3) .bg-green-300 {
+  background-color: #86efac;
+}
+
+.skill-card:nth-child(3) .bg-green-600 {
+  background-color: #16a34a;
+}
+
+.skill-card:nth-child(4) .bg-red-300 {
+  background-color: #fca5a5;
+}
+
+.skill-card:nth-child(4) .bg-red-600 {
+  background-color: #dc2626;
+}
